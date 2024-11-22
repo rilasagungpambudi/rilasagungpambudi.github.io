@@ -1,0 +1,201 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark Theme */
+    color: #f5f5f5;
+    line-height: 1.6;
+}
+
+a {
+    color: #03a9f4;
+    text-decoration: none;
+}
+
+/* Navbar Section */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212121;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #03a9f4;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    background: #03a9f4;
+    color: #121212;
+    border-radius: 5px;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100vh;
+}
+
+.home-left {
+    max-width: 50%;
+}
+
+.home-left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.home-left p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.logo-container {
+    display: flex;
+    gap: 15px;
+}
+
+.logo-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.home-right img {
+    max-width: 350px;
+    border-radius: 50%;
+    border: 4px solid #03a9f4;
+}
+
+/* Projects Section */
+.projects {
+    padding: 20px;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.project-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.project-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #212121;
+    color: #ccc;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+/* Adjusted Logo Sizes */
+.logo-container img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover; /* Fills the container completely */
+    overflow: hidden;  /* Prevents overflow of image content */
+}
+
+/* Adjusted Project Image Sizes */
+.project-grid img {
+    width: 500;
+    height: 300px;
+    object-fit: contain; /* Crops the image to fit perfectly in the square */
+    overflow: hidden;  /* Prevents image spillover */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    transition: transform 0.3s ease; /* Keeps hover effect */
+}
+
+/* Project Grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+
+/* Project Item Styling */
+.project-item {
+    background-color: #212121;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+.project-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project-item h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+}
+
+.project-item h3 a:hover {
+    color: #0288d1;
+}
+
+
+.project-item h3 a {
+    text-decoration: none;
+    color: #03a9f4;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #f5f5f5;
+    line-height: 1.4;
+}
+

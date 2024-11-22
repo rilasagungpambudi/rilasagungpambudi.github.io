@@ -199,3 +199,74 @@ footer {
     line-height: 1.4;
 }
 
+@media (max-width: 768px) {
+    /* Navbar adjustments */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Home Section adjustments */
+    .home {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        height: auto; /* Allow height to adjust to content */
+    }
+
+    .home-left {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .home-right img {
+        max-width: 80%; /* Scale image for smaller screens */
+        margin-top: 20px;
+    }
+
+    /* Logo container adjustments */
+    .logo-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo-container img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Projects Section adjustments */
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 15px;
+    }
+
+    .project-item img {
+        height: 150px; /* Reduce image height for smaller screens */
+    }
+
+    .project-item h3 {
+        font-size: 1rem; /* Reduce font size */
+    }
+
+    .project-item p {
+        font-size: 0.9rem; /* Slightly smaller text for descriptions */
+    }
+
+    /* Footer adjustments */
+    footer {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .social-links a {
+        font-size: 1rem;
+        margin: 0 5px;
+    }
+}

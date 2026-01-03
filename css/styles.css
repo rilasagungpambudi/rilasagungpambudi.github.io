@@ -449,6 +449,12 @@ a {
     color: #fb923c;
 }
 
+.skill-tag.java {
+    background: rgba(251, 146, 60, 0.1);
+    border-color: rgba(251, 146, 60, 0.2);
+    color: #ec4899;
+}
+
 /* Store Links Container */
 .store-links {
     display: flex;

@@ -8,13 +8,16 @@
     <meta name="description"
         content="Experienced Mobile Developer with 5+ years specializing in Flutter and Native Android development. Successfully delivered 15+ high-quality applications.">
     <link rel="icon" type="image/png" href="RA.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <!-- Navbar Section -->
     <nav class="navbar">
-        <div class="logo">Rilas Portfolio</div>
+        <div class="logo">Rilas.dev</div>
         <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#projects">Portfolio</a>
@@ -25,24 +28,55 @@
     <!-- Home Section -->
     <section id="home" class="home">
         <div class="home-left">
-            <h1>Rilas Agung Pambudi</h1>
+            <span class="role-badge">✨ Mobile Developer</span>
+            <h1>Hi, I'm <span class="gradient-text">Rilas Agung Pambudi</span></h1>
             <p>
                 Experienced Mobile Developer with 5+ years specializing in Flutter and Native Android development.
-                Successfully delivered 15+ high-quality applications with a combined 357,000+ user downloads. Expert in
-                cross-platform development, performance optimization, secure authentication systems, and clean
-                architecture implementation. Proficient in reducing bug resolution time by 20% through advanced
-                debugging techniques and Agile methodologies. Strong track record in API integration, app store
-                publishing, and implementing innovative mobile solutions
+                Expert in cross-platform development, performance optimization, secure authentication systems,
+                and clean architecture implementation.
             </p>
+
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Apps Built</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">357K+</span>
+                    <span class="stat-label">Downloads</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Years Exp</span>
+                </div>
+            </div>
+
+            <div class="cta-container">
+                <a href="#projects" class="cta-btn primary">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M19,19H5V5H19M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M13.96,12.29L11.21,15.83L9.25,13.47L6.5,17H17.5L13.96,12.29Z" />
+                    </svg>
+                    View Portfolio
+                </a>
+                <a href="#contact" class="cta-btn secondary">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                    </svg>
+                    Contact Me
+                </a>
+            </div>
+
             <div class="logo-container">
-                <img src="assets/images/flutter-logo.png" alt="Flutter">
-                <img src="assets/images/dart-logo.png" alt="Dart">
-                <img src="assets/images/kotlin-logo.png" alt="Kotlin">
-                <img src="assets/images/java-logo.png" alt="Java">
-                <img src="assets/images/android-logo.png" alt="Android">
-                <img src="assets/images/ios-logo.png" alt="iOS">
-                <img src="assets/images/html-logo.png" alt="HTML">
-                <img src="assets/images/css-logo.png" alt="CSS">
+                <img src="assets/images/flutter-logo.png" alt="Flutter" title="Flutter">
+                <img src="assets/images/dart-logo.png" alt="Dart" title="Dart">
+                <img src="assets/images/kotlin-logo.png" alt="Kotlin" title="Kotlin">
+                <img src="assets/images/java-logo.png" alt="Java" title="Java">
+                <img src="assets/images/android-logo.png" alt="Android" title="Android">
+                <img src="assets/images/ios-logo.png" alt="iOS" title="iOS">
+                <img src="assets/images/html-logo.png" alt="HTML" title="HTML">
+                <img src="assets/images/css-logo.png" alt="CSS" title="CSS">
             </div>
         </div>
         <div class="home-right">
@@ -52,13 +86,20 @@
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
-        <h2>Portfolio</h2>
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+            <p>A collection of mobile applications I've developed</p>
+        </div>
         <div class="project-grid">
 
             <!-- Project: N&S -->
             <div class="project-item">
                 <img src="assets/images/project16.png" alt="N&S">
                 <h3>N&S</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag native">REST API</span>
+                </div>
                 <p>A dynamic short photo and video platform designed to empower communities by enabling users to report
                     and share real-time information about local events and social issues.</p>
                 <div class="store-links">
@@ -77,6 +118,10 @@
             <div class="project-item">
                 <img src="assets/images/project15.png" alt="GEMU Indonesia">
                 <h3>GEMU Indonesia</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag native">POS System</span>
+                </div>
                 <p>An internal point-of-sale (POS) application used exclusively by the GEMU Indonesia team for
                     PlayStation rental billing management and F&B sales recording.</p>
                 <div class="store-links">
@@ -95,6 +140,10 @@
             <div class="project-item">
                 <img src="assets/images/project1.png" alt="Hai Sawit App">
                 <h3>Hai Sawit App</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag native">News Portal</span>
+                </div>
                 <p>A digital information center that provides the latest and complete news about the palm oil plantation
                     industry.</p>
                 <div class="store-links">
@@ -121,6 +170,10 @@
             <div class="project-item">
                 <img src="assets/images/mitra-komtim.png" alt="Mitra Komtim">
                 <h3>Mitra Komtim</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag native">HRIS</span>
+                </div>
                 <p>Human Resource Information System (HRIS) designed to simplify HR processes, from attendance tracking
                     to leave requests.</p>
                 <div class="store-links">
@@ -147,6 +200,10 @@
             <div class="project-item">
                 <img src="assets/images/project2.png" alt="Raja Ongkir">
                 <h3>Raja Ongkir</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag native">Shipping</span>
+                </div>
                 <p>Check shipping costs easily, anytime & anywhere with RajaOngkir!</p>
                 <div class="store-links">
                     <a href="https://play.google.com/store/apps/details?id=net.tahutek.rajaongkir&hl=id&gl=id"
@@ -164,6 +221,10 @@
             <div class="project-item">
                 <img src="assets/images/project3.png" alt="Komtim">
                 <h3>Komtim</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag native">Talent Finder</span>
+                </div>
                 <p>Select trained and experienced talents only in Komtim. Find the right talent to help your business
                     grow better.</p>
                 <div class="store-links">
@@ -190,6 +251,10 @@
             <div class="project-item">
                 <img src="assets/images/project4.png" alt="IPTV">
                 <h3>IPTV</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag kotlin">Kotlin</span>
+                    <span class="skill-tag native">Smart TV</span>
+                </div>
                 <p>Application used for hotel visitors in the form of entertainment and information.</p>
                 <div class="store-links">
                     <a href="https://photos.google.com/share/AF1QipMNJMeFowvJvMn4RgnDrPbgfMztxWL6rN2jD329mWMZh467u_FQePO4Y56YnJItqA/photo/AF1QipPwGyvh0DoOlrrV7p8V_2kWFE0pzwFyUpUur2TB?key=UkNJV3c0LXZjeWJEMFUxWm5rNnJCd0ZiYXdpWXJR"
@@ -207,6 +272,10 @@
             <div class="project-item">
                 <img src="assets/images/project5.png" alt="Inacash">
                 <h3>Inacash</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag kotlin">Kotlin</span>
+                    <span class="skill-tag native">Blockchain</span>
+                </div>
                 <p>One of the first Indonesian e-money applications that uses blockchain technology.</p>
                 <div class="store-links">
                     <a href="https://photos.google.com/share/AF1QipOiud60S2rmcazcvhSscuBzcBg0pmdvkgRCoWmsMqncGkaqkPU1KNwsdtsM9O5lVA?key=MFJIUlRuaVRwYWVIZVAtdmprU21fMGd3ck1PSGFR"
@@ -224,6 +293,10 @@
             <div class="project-item">
                 <img src="assets/images/project6.png" alt="Plant D">
                 <h3>Plant D</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag kotlin">Kotlin</span>
+                    <span class="skill-tag native">Marketplace</span>
+                </div>
                 <p>A marketplace application for selling seeds with chat consultation features for plant-related
                     inquiries.</p>
                 <div class="store-links">
@@ -242,6 +315,10 @@
             <div class="project-item">
                 <img src="assets/images/project7.png" alt="UMP Mobile Att">
                 <h3>UMP Mobile Att</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag kotlin">Kotlin</span>
+                    <span class="skill-tag native">GPS Tracking</span>
+                </div>
                 <p>Android-based attendance application with GPS technology for accurate location tracking.</p>
                 <div class="store-links">
                     <a href="https://play.google.com/store/apps/details?id=attedancekaryawanump.ump.ac.id&hl=id&gl=id"
@@ -267,6 +344,10 @@
             <div class="project-item">
                 <img src="assets/images/project8.png" alt="Siarta">
                 <h3>Siarta</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag kotlin">Kotlin</span>
+                    <span class="skill-tag native">Academic</span>
+                </div>
                 <p>Academic Information System application for student guardians at Muhammadiyah University of
                     Purwokerto.</p>
                 <div class="store-links">
@@ -293,6 +374,10 @@
             <div class="project-item">
                 <img src="assets/images/project9.png" alt="Serunai Hati">
                 <h3>Serunai Hati</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag kotlin">Kotlin</span>
+                    <span class="skill-tag native">Counseling</span>
+                </div>
                 <p>A communication medium for guidance and counseling for students.</p>
                 <div class="store-links">
                     <a href="https://play.google.com/store/apps/details?id=satcump.ump.ac.id&hl=id&gl=id"
@@ -310,6 +395,10 @@
             <div class="project-item">
                 <img src="assets/images/project10.png" alt="Bell Sekolah">
                 <h3>Bell Sekolah</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag kotlin">Kotlin</span>
+                    <span class="skill-tag native">IoT</span>
+                </div>
                 <p>Automatic School Bell Application to configure bell devices. Supports BS-ELC WIFI for scheduled audio
                     playback.</p>
                 <div class="store-links">
@@ -328,6 +417,10 @@
             <div class="project-item">
                 <img src="assets/images/project11.png" alt="Presensi Mobile QrCode UMP">
                 <h3>Presensi Mobile QrCode UMP</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag kotlin">Kotlin</span>
+                    <span class="skill-tag native">QR Code</span>
+                </div>
                 <p>QR code-based mobile attendance application for Muhammadiyah University of Purwokerto students.</p>
                 <div class="store-links">
                     <a href="https://play.google.com/store/apps/details?id=app.attendancemahasiswaump.com&hl=id&gl=id"
@@ -353,6 +446,10 @@
             <div class="project-item">
                 <img src="assets/images/project12.png" alt="KKN UMP">
                 <h3>KKN UMP</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag kotlin">Kotlin</span>
+                    <span class="skill-tag native">Activity Log</span>
+                </div>
                 <p>Application used by UMP students to fill in KKN activities during KKN activities.</p>
                 <div class="store-links">
                     <a href="https://play.google.com/store/apps/details?id=kknump.ump.ac.id&hl=id&gl=id" target="_blank"
@@ -378,6 +475,10 @@
             <div class="project-item">
                 <img src="assets/images/project13.png" alt="Mitra Komerce">
                 <h3>Mitra Komerce</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Flutter</span>
+                    <span class="skill-tag native">E-commerce</span>
+                </div>
                 <p>A village youth management application for education and empowerment in E-commerce technology.</p>
                 <div class="store-links">
                     <a href="https://play.google.com/store/apps/details?id=kknump.ump.ac.id&hl=id&gl=id" target="_blank"
@@ -395,15 +496,20 @@
             <div class="project-item">
                 <img src="assets/images/project14.png" alt="SMK KENCANA">
                 <h3>SMK KENCANA</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag web">Flutter Web</span>
+                    <span class="skill-tag native">E-Learning</span>
+                </div>
                 <p>Website built with Flutter for student scheduling, e-learning, payments, and human resource
                     management.</p>
                 <div class="store-links">
-                    <a href="https://edu-smkkencana.id" class="store-link demo">
+                    <a href="https://edu-smkkencana.id" target="_blank" rel="noopener noreferrer"
+                        class="store-link demo">
                         <svg viewBox="0 0 24 24">
                             <path
-                                d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M10,16.5L16,12L10,7.5V16.5Z" />
+                                d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
                         </svg>
-                        Web App
+                        Visit Website
                     </a>
                 </div>
             </div>
@@ -413,12 +519,35 @@
 
     <!-- Footer Section -->
     <footer id="contact">
-        <p>Follow me on:</p>
-        <div class="social-links">
-            <a href="mailto:rilasagungpambudi@gmail.com">Email</a>
-            <a href="https://www.linkedin.com/in/rilas-agung-pambudi-6027591b4/" target="_blank">LinkedIn</a>
+        <div class="footer-content">
+            <h3>Let's Connect</h3>
+            <p>Feel free to reach out for collaborations or just a friendly hello</p>
+            <div class="social-links">
+                <a href="mailto:rilasagungpambudi@gmail.com" class="social-link email" title="Email">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/rilas-agung-pambudi-6027591b4/" target="_blank"
+                    class="social-link linkedin" title="LinkedIn">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/rilasagungpambudi" target="_blank" class="social-link github"
+                    title="GitHub">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+                    </svg>
+                </a>
+            </div>
         </div>
-        <p>&copy; 2024 Rilas Agung Pambudi</p>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rilas Agung Pambudi. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 

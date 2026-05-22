@@ -285,7 +285,7 @@ a {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 25px;
+    gap: 22px;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -293,8 +293,8 @@ a {
 /* Project Item Styling */
 .project-item {
     background: linear-gradient(180deg, rgba(25, 25, 25, 1), rgba(18, 18, 18, 1));
-    padding: 24px;
-    border-radius: 20px;
+    padding: 14px 14px 20px;
+    border-radius: 18px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     text-align: left;
     transition: all 0.4s ease;
@@ -386,10 +386,11 @@ a {
 .project-item img {
     width: 100%;
     aspect-ratio: 16 / 9;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center center;
-    border-radius: 14px;
-    margin-bottom: 18px;
+    display: block;
+    border-radius: 12px;
+    margin-bottom: 20px;
     background: linear-gradient(135deg, #1a1a1a, #252525);
     transition: transform 0.3s ease;
 }
